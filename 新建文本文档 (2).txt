@@ -1,0 +1,23 @@
+1.结构层:由html或者xhtmml等标记性语言构成，简单来说就是标签构成，对网页语义和含义做出描述
+  表示层:由CSS构成，回答了如何显示内容的问题
+  行为层:由js语言和dom构成，负责回答内容应该如何对事件做出反应的问题
+2.第一种方法
+	给容器父元素设置align-items:center;display:-webkit-flex;justify-content:center;
+  第二种方法：
+	给容器父元素设置display：grid;给容器设置：margin;auto;
+
+3.margin塌陷问题：就是子元素设置margin父元素也会有相同的margin的问题；
+	解决方法：1.給父元素设置属性overflow:hidden;
+		  2.给父元素加一个边框
+ margin重叠问题：在CSS中，相邻的两个盒子的外边距可以结合成一个单独的外边距，这种合并外边距的方式被成为重叠，
+解决方法
+1、父元素加overflow：hidden;zoom:1;
+2.浮动，clear:both;float:left;
+3.增加些边缘属性：别如padding值；
+4.新增绘画元素canvas
+  新增媒体元素video和audio
+  本地离线存储web storage
+  语义化更好的元素如header，section，footer,nav,article
+  新增表单控件email,url,number,date等
+  新增动画特效
+  多设备，跨平台
